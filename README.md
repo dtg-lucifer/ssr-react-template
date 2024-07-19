@@ -13,9 +13,38 @@ Everyone is welcome to contribute to this repository. And for each contribution 
 
 This repository also helpe people to understand the SSR concept before diving deep into more advanced frameworks like **Next.js** or **Gatsby.js**.
 
+# How to use this repository?
+
+- Step 1: Clone the repository.
+- Step 2: Install the dependencies.
+- Step 3: Build the project.
+- Step 4: Start the server.
+
+```bash
+# Step 1: Clone the repository
+git clone git@github.com:dtg-lucifer/ssr-react-template.git
+```
+
+```bash
+# Step 2: Install the dependencies
+npm install
+```
+
+```bash
+# Step 3: Build the project
+npm run build
+```
+
+```bash
+# Step 4: Start the server
+npm start
+```
+
+> The server will start at `http://localhost:8000`. Open the URL in the browser to see the server-side rendered React app.
+
 # Project structure of the repository
 
-The main root directory and the folder structure of the repository is as follows:
+> The **master** root directory and the folder structure of the repository is as follows:
 
 ```bash
 .
@@ -63,6 +92,68 @@ The main root directory and the folder structure of the repository is as follows
 - **README.md**: Project documentation file.
 - **tsconfig.json**: TypeScript configuration file.
 
+> There is also another example with the good old CRA which is much more convinient with the modern tools as that is the most used tool over the past decade, but it includes the feature of SSR with express.js. It would be better for anyone who is just gonna use the SSR and dont wanna spend time figuring out how can the things be done on this new setupt because the **ESBuild** one lacks a lot of features such as **Hot reload**, modern styling solutions such as **SASS** or **LESS** or **TailwindCSS**.
+
+**That repository is available at** **_[this repo - SSR with CRA](https://github.com/dtg-lucifer/React-18-SSR-Implementation.git)_**
+
+> The folder structure of the repository is as follows:
+
+```bash
+├── public/
+├── server/
+│ ├── index.js
+│ └── server.js
+├── src/
+│ ├── components/
+│ │ └── HomeModule.js
+│ ├── About.js
+│ ├── App.css
+│ ├── App.js
+│ ├── Home.js
+│ ├── index.css
+│ ├── index.js
+│ └── reportWebVitals.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── yarn.lock
+```
+
+
+- **public/**: Contains static files.
+- **server/**: Contains server-side code.
+  - **index.js**: The main server index file.
+  - **server.js**: Server logic file.
+- **src/**: Contains source code.
+  - **components/**: Contains reusable components.
+    - **HomeModule.js**: Home module component.
+  - **About.js**: About page component.
+  - **App.css**: CSS styles for the App component.
+  - **App.js**: Main React component.
+  - **Home.js**: Home page component.
+  - **index.css**: Global CSS styles.
+  - **index.js**: Entry point for React application.
+  - **reportWebVitals.js**: File for measuring performance in the app.
+- **.gitignore**: Git ignore file.
+- **package-lock.json**: Lock file for npm dependencies.
+- **package.json**: Manifest file for npm.
+- **yarn.lock**: Lock file for Yarn dependencies.
+
+---
+
 # Contribution
 
 Anyone can contribute to this repository. Just fork the repository and create a pull request. I will merge each of the pull requests so that the idea of SSR with react and express will be spread out to more and more people around the react community.
+
+- Step 1: Fork the repository.
+- Step 2: Clone the repository.
+- Step 3: Create a new branch.
+- Step 4: Make changes in the repository.
+- Step 5: Push the changes.
+- Step 6: Create a pull request.
+
+Otherwise anyone can drop a mail to me directly at my email [Email](mailto:dev.bosepiush@gmail.com) and i will add them as the contributor to the repository.
+
+# License
+
+This repository is licensed under the MIT License. Therefore anyone can use this repository as the template and build their own setups. The license file is available in the repository. Anyone can check the license file for more information.
