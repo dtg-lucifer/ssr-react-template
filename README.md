@@ -1,5 +1,8 @@
 # SSR App with React.js and Express.js
 
+![image](https://github.com/user-attachments/assets/a6cf2f82-393a-4282-923f-3971e1e61c81)
+
+
 It is a basic template to showcase how a react app can be made server side rendered using express.js. It simply renders a react app on the server and sends the html to the client. The client then hydrates the app and makes it interactive.
 
 > As for the build tool it uses **ESBuild**. It is a very fast build tool and is written in Go. It is very fast and is a good alternative to webpack.
